@@ -1,0 +1,655 @@
+
+body {
+	margin: 0px !important;
+	padding: 0px !important;
+	background-color: #F1F1F5 !important;
+	overflow-x: hidden; /* maybe not the best solution */
+}
+
+/* util */
+.eUtilButton {
+	margin: 0px;
+	padding: 5px 7px;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #F0F0F0;
+	/*background-color: #EEEFF0;*/
+	/*background-color: #A0C0FF;*/
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BBB #BBB #A0A0A0;
+	border-image: none;
+	border-radius: 3px;
+}
+.eUtilButton:hover {
+	border-color: #939393;
+}
+
+/* eUserInterface */
+.eUserInterface {
+	width: 100%;
+}
+.eUserInterfaceTopPanel {
+	width: 100%;
+	padding: 5px;
+	background-color: #BBDDFF;
+	border-bottom: 1px solid #AABBCC;
+}
+.eUserInterfaceTopPanelRight {
+	float: right;
+}
+.eUserInterfaceWindow {
+	/*margin-left: auto;
+	margin-right: auto;*/
+	width: 100%;
+	padding: 10px;
+}
+.eUserInterfaceBottomPanel {
+	height: 70px;
+}
+
+/* eUserPanel */
+.eUserPanel {
+	min-width: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.eUserPanelInputLabel {
+	min-width: 150px;
+	text-align: right;
+}
+.eUserPanelInputBox {
+	min-width: 300px;
+	padding: 4px 0px;
+}
+.eUserPanelShowFormLabel {
+	display: inline;
+	color: #1111CC;
+	cursor: pointer;
+}
+.eUserPanelShowFormLabel:hover {
+	text-decoration: underline;
+}
+.eUserPanelSignedInPanel {
+	margin-left: 50px;
+}
+.eUserPanelSignedInLabel {
+	margin-bottom: 5px;
+}
+.eUserPanelSignOutButton {
+	float: right;
+}
+
+/* eInfoPanel */
+.eInfoPanel {
+	padding: 5px;
+	background-color: #FFFFFF;
+	border: 1px solid #AABBCC;
+	border-radius: 3px;
+}
+.eInfoPanelSuccess {
+	color: #00AA00;
+}
+.eInfoPanelInfo {
+	/*font-weight: bold;*/
+}
+.eInfoPanelProblem {
+	color: #EE5500;
+}
+.eInfoPanelFailure {
+	color: #CC0000;
+}
+.eInfoPanelLabel {
+	
+}
+.eInfoPanelInfoPanel {
+	margin-right: 10px;
+}
+.eInfoPanelClearButton {
+	
+}
+
+/* eWindow */
+.eWindowTopPanel tbody tr td {
+	vertical-align: bottom !important;
+}
+.eWindowSuperButton {
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+	padding-top: 1px !important;
+	padding-bottom: 0px !important;
+}
+.eWindowPath {
+	margin-left: 5px;
+	font-size: 15px;
+}
+.eWindowViewPanel {
+	width: 100%;
+	margin-top: 10px;
+	/*background-color: #FFF;
+	border: 1px solid #BBC;
+	border-radius: 3px;*/
+	overflow: hidden;
+}
+.eDoubleWindowViewPanelWrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.eDoubleWindowNaviView {
+	overflow: hidden;
+}
+.eDoubleWindowNaviViewSlide {
+	transition: width .5s, margin .5s, background-color .5s;
+}
+.eDoubleWindowLeftNaviView {
+	
+}
+.eDoubleWindowRightNaviView {
+	background-color: #FFF;
+}
+
+/* eNaviPackageView */
+.eNaviPackageViewPanel {
+	width: 100%;
+}
+.eNaviPackageViewTopPanel {
+	width: 100%;
+	/*margin: 5px;*/
+	/*margin: 5px 5px 2px 5px; /* top, right, bottom, left */
+	padding: 5px 10px 2px 10px; /* top, right, bottom, left */
+}
+.eNaviPackageViewInfoView tbody tr td {
+	vertical-align: bottom !important;
+}
+.eNaviPackageViewInfoViewColumn {
+	margin-right: 10px;
+}
+.eNaviPackageViewCaptionPanel {
+	
+}
+.eNaviPackageViewCaptionPanelName {
+	font-size: 20px;
+	/*font-weight: bold;*/
+	/*text-decoration: underline;*/
+}
+.eNaviPackageViewTopPanelButtonPanel {
+	float: right;
+}
+.eNaviPackageViewTopPanelButtonPanelButton {
+	display: inline-block;
+	margin: 0px 5px !important;	/* top-bottom, left-right */
+}
+
+/* eRootNaviView */
+.eRootNaviViewWelcomeLabel {
+	font-size: 24px;
+	color: #0055CC;
+	font-weight: bold;
+	letter-spacing: 2px;
+	/*text-align: center;*/
+}
+.eRootNaviViewGrid {
+	margin: 10px;
+}
+.eRootNaviViewGrid tbody tr td {
+	padding: 5px;
+	font-size: 16px;
+}
+
+/* eElementView */
+.eElementViewViewsPanel {
+	width: 100%;
+}
+.eElementViewCompactView {
+	display: inline-block;
+}
+
+/* eView */
+.eView {
+	padding: 5px;
+}
+.eViewTable {
+	width: 100%;
+	/*margin: 5px;*/
+	margin: 2px 5px 5px 5px; /* top, right, bottom, left */
+}
+
+/* eAttributeView */
+.eAttributeView {
+	margin-right: 170px;	/* because of the AttributeValueView that can pop-up */
+}
+
+/* eAttributeValueView */
+.eAttributeValueViewAddButton {
+	float: right;
+	margin-top: -40px !important;
+	margin-right: 10px !important;
+}
+
+/* eViewCaption */
+.eViewCaption {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 3px;
+	background-color: #DEF;
+}
+.eViewCaptionCaption {
+	font-size: 24px;
+}
+.eViewCaptionAdditionalWidget {
+	float: right;
+	margin-left: 15px !important;
+	margin-top: -10px !important;
+}
+
+/* eToggleButton */
+.eToggleButton {
+	display: inline-block;
+	margin: 5px 10px !important;
+}
+
+/* eOptionPanel */
+.eOptionPanel {
+	display: inline-block;
+}
+.eOptionPanelOptionPanel {
+	position: absolute;
+	margin-top: -5px;
+	margin-left: 10px;
+	z-index: 2;
+	padding: 5px;
+	background-color: #EEE;
+	border: 1px solid #ABC;
+	border-radius: 2px;
+}
+
+/* eVoteWidget */
+.eVoteWidgetNotVoted {
+	cursor: pointer;
+}
+.eVoteWidgetVoted {
+	cursor: auto;
+}
+.eVoteWidgetDown:hover {
+	background-color: #FBC;
+}
+.eVoteWidgetUp:hover {
+	background-color: #BFC;
+}
+
+/* eRatingWidget */
+.eRatingWidgetPositive {
+	color: #0A0;
+}
+.eRatingWidgetNegative {
+	color: #D00;
+}
+
+/* eNameWidget */
+.eNameWidgetName {
+	font-size: 14px;
+}
+.eNameWidgetDescription {
+	font-size: 12px;
+}
+
+/* eCell */
+.eCellEvButton {
+	float: right !important;
+	margin-left: -7px !important;
+	margin-right: -7px !important;
+	margin-top: -10px !important;
+	margin-bottom: -4px !important;
+	padding-left: 1px !important;
+	padding-right: 1px !important;
+	padding-top: 1px !important;
+	padding-bottom: 0px !important;
+}
+.eCellEvImage {
+	width: 12px;
+}
+
+/* eNestedTableView */
+.eNestedTableView {
+	position: absolute;
+	margin-top: -53px;
+	margin-left: -11px;
+	background-color: #DEF;
+	border-radius: 3px;
+	border: 1px solid #ABC;
+	cursor: auto;
+}
+.eNestedTableViewCloseButton {
+	float: right;
+	margin-top: -35px !important;
+}
+
+/* eTable */
+.eTable {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.eTable tbody tr td {
+	/*border-top: 1px solid #AABBCC;*/
+	border-bottom: 1px solid #AABBCC;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.eTableHeader {
+	font-style: italic;
+}
+.eTableNoItemsLabel {
+	margin-right: -200px;
+	padding: 10px;
+	overflow: visible;
+	font-style: italic;
+}
+.eTableRow:hover {
+	background-color: #BBDDFF;
+}
+.eTableSlimColumn {
+	width: 32px;	/* avoids a column from getting too wide */
+}
+.eTableHighlightUpvoted {
+	background-color: #AFA;
+}
+.eTableHighlightDownvoted {
+	background-color: #FAA;
+}
+.eTableHighlightOwn {
+	background-color: #AAF;
+}
+.eTableHighlightNew {
+	background-color: #FD8;
+}
+
+/* eEntryTable */
+.eEntryTable tbody tr td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.eEntryTableRow:hover {
+	cursor: pointer;
+}
+.eEntryTableSelectedRow {
+	background-color: #FFF;
+}
+
+/* eAttributeTable */
+.eAttributeTable tbody tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.eAttributeTableRow {
+	height: 30px;
+}
+.eAttributeTableRow:hover {
+	/*nothing*/
+}
+.eAttributeTableRowValueSelected {
+	background-color: #DEF;
+}
+.eAttributeTableAddValueCell:hover {
+	background-color: #7AF;
+	/*background-color: #DEF;*/
+	cursor: pointer;
+}
+.eAttributeTableAddValueCellEmptyEvButton {
+	float: left !important;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	padding-top: 1px !important;
+	padding-bottom: 0px !important;
+}
+.eAttributeTableAddValueCellEmptyEvImage {
+	width: 24px;
+}
+
+/* eAttributeValueTable */
+.eAttributeValueTable {
+	width: 100%;
+}
+.eAttributeValueTable tbody tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.eAttributeValueTableRow:hover {
+	/*nothing*/
+}
+
+/* eMediumTable */
+.eMediumTable tbody tr td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.eMediumTableRow:hover {
+	cursor: pointer;
+}
+.eMediumTableImage {
+	max-width: 75px;
+	max-height: 75px;
+}
+
+/* eMediumView */
+.eMediumViewMediaBox {
+	position: absolute;
+	margin-top: -50px;
+	padding: 5px;
+	background-color: #FFF;
+	border-radius: 3px;
+	border: 1px solid #ABC;
+}
+.eMediumViewMediaBoxClose {
+	position: absolute;
+	margin-top: -40px !important;
+	/*float: right;*/
+	right: 0px;
+}
+.eMediumViewImage {
+	/*margin-left: -40px;*/
+	max-width: 768px;
+	max-height: 768px;
+}
+
+/* eCriterionTable */
+.eCriterionTableRow:hover {
+	/*nothing*/
+}
+.eCriterionTableCanvas tbody tr td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.eCriterionTableCanvasNameColumn {
+	width: 40%;
+}
+.eCriterionTableCanvasEvBarColumn {
+	width: 60%;
+}
+.eCriterionTableCanvasEvBarCell {
+	padding: 0px !important;
+}
+.eCriterionTableCanvasEvBarCellEvaluable {
+	cursor: pointer;
+}
+.eCriterionTableCanvasEvBarCellEvaluable:hover {
+	background-color: #7AF;
+	/*background-color: #DEF;*/
+}
+.eCriterionTableCanvasEvBar {
+	margin-top: 0px;
+	margin-bottom: -4px;
+	/*cursor: pointer;*/ /* only when evaluable is true */
+}
+.eCriterionTableCanvasEvBarPopup {
+	position: absolute;
+	padding: 5px 10px;
+	background: rgba(255, 255, 255, 0.75);
+}
+
+/* eCommentTable */
+.eCommentTable {
+	
+}
+.eCommentTableRow {
+	
+}
+.eCommentTablePseudonym {
+	font-weight: bold;
+}
+.eCommentTableDatum {
+	margin-left: 10px;
+	font-size: 12px;
+	color: #707070;
+}
+.eCommentTableText {
+	
+}
+.eCommentTableVoteWidget {
+	width: 20px;
+	height: 20px;
+	/*margin-left: 3px;*/
+	padding: 2px;
+}
+.eCommentTableRating {
+	vertical-align: super;
+}
+
+/* eCommentView */
+.eCommentViewCommentArea {
+	display: block;
+	min-width: 400px;
+}
+.eCommentViewCommentButton {
+	margin: 5px;
+}
+.eCommentViewCommentError {
+	color: #CC0000;
+}
+
+/* eForm */
+.eFormErrorPanel {
+	color: #CC0000;
+}
+.eFormFinalizePanel {
+	float: right;
+}
+
+/* eAddForm */
+.eAddFormNameInput {
+	width: 300px;
+}
+.eAddFormDescriptionInput {
+	width: 300px;
+}
+.eAddFormCancelButton {
+	min-width: 80px;
+	margin: 5px;
+}
+.eAddFormAddButton {
+	min-width: 80px;
+	margin: 5px;
+}
+.eAddFormWriteStoryTextInput {
+	min-width: 450px;
+	min-height: 100px;
+}
+
+/* eStoryPanel */
+.eStoryPanel {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+.eStoryPanelInsertSentenceButton {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: -26px;
+	cursor: pointer;
+}
+.eStoryPanelInsertSentenceButton:hover {
+	border-radius: 3px;
+	background-color: #BDF;
+}
+.eStoryPanelInsertSentenceButtonClicked {
+	z-index: 1;
+}
+.eStoryPanelSentenceStatView {
+	position: absolute;
+	display: inline;
+	margin-top: 22px;
+	margin-left: 20px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.eStoryPanelSentenceHeader {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.eStoryPanelSentenceView {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.eStoryPanelSentenceHover {
+	background-color: #BDF;
+}
+.eStoryPanelSentenceViewFiltered {
+	color: #707070;
+}
+.eStoryPanelHiddenSentencesView {
+	color: #707070;
+	cursor: pointer;
+}
+.eStoryPanelHiddenSentencesView:hover {
+	/*border-radius: 1px;*/
+	background-color: #BDF;
+}
+
+/* eInsertSentencePanel */
+.eInsertSentencePanel {
+	position: absolute;
+	display: inline;
+	z-index: 1;
+	margin-top: 30px;
+	margin-left: -235px;
+	padding: 3px;
+	background-color: #FFF;
+	border: 1px solid #ABC;
+}
+.eInsertSentencePanelTextInput {
+	width: 450px;
+	height: 25px;
+	text-align: center;
+	/*resize: none;*/
+	/*resize: vertical;*/
+}
+.eInsertSentencePanelButtonPanel {
+	float: right;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+.eInsertSentencePanelCloseButton {
+	margin-right: 10px;
+}
+.eInsertSentencePanelSendButton {
+	
+}
+
+/* eWriteStoryForm */
+.eWriteStoryFormTextInput {
+	display: block;
+}
+
+/* eSentenceStatView */
+.eSentenceStatViewVoteWidget {
+	width: 18px;
+	height: 18px;
+	/*margin-left: 3px;*/
+	/*padding: 2px;*/
+}
+.eSentenceStatViewRating {
+	vertical-align: super;
+}
